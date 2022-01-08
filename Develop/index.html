@@ -1,34 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Password Generator</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div class="wrapper">
-      <header>
-        <h1>Password Generator</h1>
-      </header>
-      <div class="card">
-        <div class="card-header">
-          <h2>Generate a Password</h2>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Password Generator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <div class="wrapper">
+
+    <header>
+      <h1>Password Generator</h1>
+    </header>
+
+    <div class="card">
+      <div class="card-header">
+        <h2>Generate a Password:</h2>
+      </div>
+
+      <!-- Box that should contain password when done -->
+      <div class="card-body">
+        <textarea readonly id="password" placeholder="Your Secure Password..."
+          aria-label="Generated Password"></textarea>
+      </div>
+
+      <!-- Start of hidden section until clicked on -->
+      <section id="hidden-criteria">
+
+        <h3>What criteria would you like your password to meet?</h3>
+        <!-- Start of selectable criteria -->
+        <div>
+          <label>Lowercase</label>
+          <input type="checkbox" class="checks" id="lowercase">
         </div>
-        <div class="card-body">
-          <textarea
-            readonly
-            id="password"
-            placeholder="Your Secure Password"
-            aria-label="Generated Password"
-          ></textarea>
+
+        <div>
+          <label>Uppercase</label>
+          <input type="checkbox" class="checks" id="uppercase">
         </div>
+
+        <div>
+          <label>Numbers</label>
+          <input type="checkbox" class="checks" id="numbers">
+        </div>
+
+        <div>
+          <label>Symbols</label>
+          <input type="checkbox" class="checks" id="symbols">
+        </div>
+        <!-- Password default length set to 12 -->
+        <div>
+          <label>Password Length</label>
+          <input type="number" name="length" min="8" max="128" value="12" id="passlength">
+        </div>
+
+
         <div class="card-footer">
           <button id="generate" class="btn">Generate Password</button>
         </div>
+
+      </section>
+      <!-- End of hidden section until clicked on -->
+
+      <div id="unhide">
+        <button id="generate" class="btn">Choose Password Criteria</button>
       </div>
+
+
+
+
+
+
+      
     </div>
-    <script src="script.js"></script>
-  </body>
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+
 </html>
