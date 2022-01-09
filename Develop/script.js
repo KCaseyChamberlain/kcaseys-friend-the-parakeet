@@ -47,12 +47,9 @@ function randomize(){
     criteriaArray.push(returnSymbols)
   }
 
-  console.log(criteriaArray)
-    var randomCharacter = criteriaArray[Math.floor(Math.random()*criteriaArray.length)];
+  var randomCharacter = criteriaArray[Math.floor(Math.random()*criteriaArray.length)];
     return randomCharacter.call();
   }
-
-
 
 // Start of selectable criteria functions
 function returnLowercase() {
@@ -78,8 +75,6 @@ var symbol = "!@#$%^&*()?";
 var symbolCharacter = symbol[Math.floor(Math.random()*symbol.length)];
 return symbolCharacter;
 }
-
-
 
 function returnLength() {
 var length = lengthElement.value;
