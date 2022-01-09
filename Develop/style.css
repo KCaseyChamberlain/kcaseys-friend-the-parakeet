@@ -118,6 +118,7 @@ button[disabled] {
   overflow: hidden;
 }
 
+/* Hides selectable criteria until the first button is pushed. */
 #hidden-criteria {
 display: none;
 }

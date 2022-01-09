@@ -1,7 +1,7 @@
 # Kcasey's Quick Password Generator
 
 ## About
-This is my first solo JavaScript project. This password generator will create a password of a custom length using lowercase letters, uppercase letters, numbers, and symbols. 
+This is my first JavaScript project. This password generator will create a password of a custom length using lowercase letters, uppercase letters, numbers, and symbols. 
 
 The password length box will allow a password length of 8 to 128 characters. *With the default being 12 characters.*
 
