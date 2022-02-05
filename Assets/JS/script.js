@@ -77,23 +77,23 @@ return symbolCharacter;
 }
 
 function returnLength() {
-var length = lengthElement.value;
-lengthNumVal = document.getElementsByName('value')
-if(length < 8){
-  length = 8
-  lengthNumVal = 8
-}
-if(length > 128) {
-  length = 128
-}
-else(length)
+  var length = lengthElement.value;
+  if (length < 8) {
+    alert("Password must be between 8-128 characters!")
+    length = 8
+    lengthElement.value = 8;
+  }
+  if (length > 128) {
+    alert("Password must be between 8-128 characters!")
+    length = 128
+    lengthElement.value = 128
+  }
+  else (length)
   length = length
   console.log(length)
 
-return length;
+  return length;
 }
-
-
 
 criteriaButton.addEventListener("click", showHiddenCriteria);
 generateBtn.addEventListener("click", generatePassword);
