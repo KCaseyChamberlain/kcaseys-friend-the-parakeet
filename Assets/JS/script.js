@@ -78,6 +78,18 @@ return symbolCharacter;
 
 function returnLength() {
 var length = lengthElement.value;
+lengthNumVal = document.getElementsByName('value')
+if(length < 8){
+  length = 8
+  lengthNumVal = 8
+}
+if(length > 128) {
+  length = 128
+}
+else(length)
+  length = length
+  console.log(length)
+
 return length;
 }
 
