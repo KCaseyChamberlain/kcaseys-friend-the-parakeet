@@ -11,7 +11,7 @@ Each function regarding the selectable password criteria will run only if their 
 
 The following image demonstrates the web application's default appearance and functionality:
 
-![Screenshot of live URL](./images/website-functionality.jpg)
+![Screenshot of live URL](assets/images/website-functionality.jpg)
 
 ## Deployed Application
 
