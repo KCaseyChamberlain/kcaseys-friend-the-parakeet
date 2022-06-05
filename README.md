@@ -1,4 +1,4 @@
-# Kcasey's Quick Password Generator
+# Quick Password Generator
 
 ## About
 This is my first JavaScript project. This password generator will create a password of a custom length using lowercase letters, uppercase letters, numbers, and symbols. 
@@ -15,7 +15,4 @@ The following image demonstrates the web application's default appearance and fu
 
 ## Deployed Application
 
-This site is hosted by github pages.
-
-To view the site please click [here](https://kcaseychamberlain.github.io/quick-password-generator/).
-
+View the application live hosted at: https://kcaseychamberlain.github.io/quick-password-generator/
